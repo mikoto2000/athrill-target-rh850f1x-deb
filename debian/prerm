@@ -1,0 +1,2 @@
+update-alternatives --install /usr/bin/athrill2 athrill2 /usr/bin/athrill2-rh850f1x 10
+
