@@ -22,7 +22,11 @@ install/athrill-rh850f1x::
 	install -pd athrill-target-rh850f1x/params/rh850f1k/* $(DEB_DESTDIR)/usr/share/doc/athrill/params/rh850f1k
 
 build/athrill-rh850f1x::
-	cd athrill-target-rh850f1x/build_linux; make
+	# patch で空ファイルが作れないので、 touch で作成
+	touch athrill/src/device/peripheral/mros-dev/mros-athrill/target/lwip/init.h
+	touch athrill/src/device/peripheral/mros-dev/mros-athrill/target/lwip/netdb.h
+	# ビルド
+	cd athrill-target-rh850f1x/build_linux; make skip_clock_bugfix=true fix_intr_cpu_rcv_clr=true
 
 
 # dh_make generated override targets
