@@ -1,3 +1,9 @@
+athrill-rh850f1x (0.A.1-2) unstable; urgency=medium
+
+  * Added athrill_remote.
+
+ -- mikoto2000 <mikoto2000@gmail.com>  Fri, 14 May 2021 02:55:03 +0900
+
 athrill-rh850f1x (0.A.1-1) unstable; urgency=medium
 
   * Updated target version to 0.A.1.
