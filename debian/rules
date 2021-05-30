@@ -20,6 +20,8 @@ install/athrill-rh850f1x::
 	install -pd $(DEB_DESTDIR)/usr/bin
 	install -pm 755 athrill/bin/linux/athrill2 $(DEB_DESTDIR)/usr/bin/athrill2-rh850f1x
 	install -pm 755 athrill/bin/linux/athrill_remote $(DEB_DESTDIR)/usr/bin/athrill_remote
+	install -pm 755 debian/athrill_tools/codelist.awk $(DEB_DESTDIR)/usr/bin/codelist.awk
+	install -pm 755 debian/athrill_tools/geany.sh $(DEB_DESTDIR)/usr/bin/geany.sh
 	install -pd athrill-target-rh850f1x/params/rh850f1k/* $(DEB_DESTDIR)/usr/share/doc/athrill/params/rh850f1k
 
 build/athrill-rh850f1x::
