@@ -1,3 +1,8 @@
 athrill/bin/linux/athrill2
 athrill/bin/linux/athrill_remote
-
+athrill-target-rh850f1x/params/rh850f1k/atk2-sc1/device_config.txt
+athrill-target-rh850f1x/params/rh850f1k/atk2-sc1/memory.txt
+athrill-target-rh850f1x/params/rh850f1k/atk2-sc3/device_config.txt
+athrill-target-rh850f1x/params/rh850f1k/atk2-sc3/memory.txt
+debian/athrill_tools/codelist.awk
+debian/athrill_tools/geany.sh
