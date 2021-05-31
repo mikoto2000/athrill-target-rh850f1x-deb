@@ -22,11 +22,11 @@ install/athrill-rh850f1x::
 	install -pm 755 athrill/bin/linux/athrill_remote $(DEB_DESTDIR)/usr/bin/athrill_remote
 	install -pm 755 debian/athrill_tools/codelist.awk $(DEB_DESTDIR)/usr/bin/codelist.awk
 	install -pm 755 debian/athrill_tools/geany.sh $(DEB_DESTDIR)/usr/bin/geany.sh
-	install -pd $(DEB_DESTDIR)/usr/share/doc/athrill/params/rh850f1k/atk2-sc1 $(DEB_DESTDIR)/usr/share/doc/athrill/params/rh850f1k/atk2-sc3
-	install -pm 644 athrill-target-rh850f1x/params/rh850f1k/atk2-sc1/device_config.txt $(DEB_DESTDIR)/usr/share/doc/athrill/params/rh850f1k/atk2-sc1/device_config.txt
-	install -pm 644 athrill-target-rh850f1x/params/rh850f1k/atk2-sc1/memory.txt $(DEB_DESTDIR)/usr/share/doc/athrill/params/rh850f1k/atk2-sc1/memory.txt
-	install -pm 644 athrill-target-rh850f1x/params/rh850f1k/atk2-sc3/device_config.txt $(DEB_DESTDIR)/usr/share/doc/athrill/params/rh850f1k/atk2-sc3/device_config.txt
-	install -pm 644 athrill-target-rh850f1x/params/rh850f1k/atk2-sc3/memory.txt $(DEB_DESTDIR)/usr/share/doc/athrill/params/rh850f1k/atk2-sc3/memory.txt
+	install -pd $(DEB_DESTDIR)/usr/share/athrill/params/rh850f1k/atk2-sc1 $(DEB_DESTDIR)/usr/share/athrill/params/rh850f1k/atk2-sc3
+	install -pm 644 athrill-target-rh850f1x/params/rh850f1k/atk2-sc1/device_config.txt $(DEB_DESTDIR)/usr/share/athrill/params/rh850f1k/atk2-sc1/device_config.txt
+	install -pm 644 athrill-target-rh850f1x/params/rh850f1k/atk2-sc1/memory.txt $(DEB_DESTDIR)/usr/share/athrill/params/rh850f1k/atk2-sc1/memory.txt
+	install -pm 644 athrill-target-rh850f1x/params/rh850f1k/atk2-sc3/device_config.txt $(DEB_DESTDIR)/usr/share/athrill/params/rh850f1k/atk2-sc3/device_config.txt
+	install -pm 644 athrill-target-rh850f1x/params/rh850f1k/atk2-sc3/memory.txt $(DEB_DESTDIR)/usr/share/athrill/params/rh850f1k/atk2-sc3/memory.txt
 
 build/athrill-rh850f1x::
 	# patch で空ファイルが作れないので、 touch で作成
