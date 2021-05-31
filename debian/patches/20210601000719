@@ -1,0 +1,31 @@
+Description: Moved device_config.txt and memory.txt.
+ .
+ athrill-rh850f1x (0.A.1-4) unstable; urgency=medium
+ .
+   * Moved device_config.txt and memory.txt.
+Author: mikoto2000 <mikoto2000@gmail.com>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: 2021-05-31
+
+--- athrill-rh850f1x-0.A.1.orig/.github/workflows/deploy-deb.yml
++++ athrill-rh850f1x-0.A.1/.github/workflows/deploy-deb.yml
+@@ -61,7 +61,7 @@ jobs:
+         env:
+           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+         with:
+-          tag_name: debian/${{ steps.build-deb.outputs.VERSION }}
++          tag_name: ${{ steps.build-deb.outputs.VERSION }}
+           release_name: ${{ steps.build-deb.outputs.VERSION }}
+           body: ${{ github.event.head_commit.message }}
+           draft: false
